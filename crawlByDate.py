@@ -55,7 +55,7 @@ def extract_top2_from_web(args):
 
 data_folder = "/home/jacktran/stock_model"
 successful_file = os.path.join(data_folder, "stock_2025.txt")
-output_file = os.path.join(data_folder, "merged_file.csv")
+output_file = os.path.join(data_folder, "newTrading.csv")
 
 try:
     companies_df = Listing().all_symbols()
