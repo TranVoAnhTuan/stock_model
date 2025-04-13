@@ -43,7 +43,6 @@ def extract_top2_from_web(args):
             print(f"Không có dữ liệu hợp lệ ở {url}")
             return None
 
-        # Cập nhật và in tiến trình
         with counter.get_lock():
             counter.value += 1
             print(f"Đã crawl mã {stock_id} ({counter.value}/{total_stocks} - {counter.value/total_stocks*100:.2f}%)")
